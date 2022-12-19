@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reto1</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+    <!-- JS -->
+    <script type="text/javascript" src="js/script.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/3.1.2/rollups/aes.js" integrity="sha256-/H4YS+7aYb9kJ5OKhFYPUjSJdrtV6AeyJOtTkw6X72o=" crossorigin="anonymous"></script>
+
+</head>
+<body>
+    <main>
+        <div class="row">
+            <div class="col1">
+                <div class="logo-cont">
+                    <img src="img/logo.png" class="logo" alt="Logo"></img>
+                </div>
+
+                <section class="datos">
+                    <label for="mensaje">Ingrese su mensaje aquí</label>
+                    <textarea spellcheck="false"  cols="65" rows="10" id="mensaje" class="input-msg" required></textarea>
+                
+                    <button onclick="encrypt()">Encriptar</button>
+                    <button onclick="desencrypt()">Desencriptar</button>
+                </section>
+            </div>
+            <div class="col2">
+                <div id="img-def" class="no-imagen">
+                    <img src="img/chica.png" class="no-imagen-img" alt="Ningún mensaje encontrado">
+                </div>
+                <div class="no-texto">
+                    <h2 id="respuesta">Ningún mensaje encontrado...</h2>
+                    <p id="p-def">Ingresa el texto que desees encriptar/desencriptar!</p>
+                </div>
+
+                <div class="copyto">
+                    <button id="copy" onclick="copytoclip()">Copiar</button>
+                </div>
+                
+            </div>
+        </div>
+    </main>
+</body>
+</html>
