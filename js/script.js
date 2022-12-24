@@ -19,8 +19,8 @@ function desencrypt () {
 }
 
 function copytoclip () {
-    var copyText = document.getElementById("mensaje").value;
+    var copyText = document.getElementById("respuesta").innerHTML;
     navigator.clipboard.writeText(copyText).then(() => {
-        alert("Copiado al portapapeles!");
+        alert("Copiado "+ copyText +" al portapapeles!");
     });
 }
